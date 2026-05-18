@@ -3,98 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EKDERSİM - Destek ve Gizlilik Politikası</title>
+    <title>Maç Saati - Destek ve Gizlilik Politikası</title>
     <style>
-        /* Uygulamanın yahoo mavisi ve arka plan renkleriyle uyumlu CSS */
+        /* Modern ve temiz görünüm için CSS */
         :root {
-            --yahoo-blue: #003366; /* Uygulamadaki yahoo renginiz */
-            --bg-color: #f4f7f6;   /* Uygulamadaki arka plan renginiz */
-            --text-color: #333;
+            --primary-blue: #003366; /* Uygulamanın ana rengi */
+            --bg-gray: #f4f7f6;      /* Arka plan rengi */
+            --white: #ffffff;
+            --text-dark: #333;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         header {
-            background-color: white;
-            color: var(--yahoo-blue);
-            padding: 40px 20px;
+            background-color: var(--white);
+            border-bottom: 3px solid var(--primary-blue);
+            padding: 50px 20px;
             text-align: center;
-            border-bottom: 3px solid var(--yahoo-blue);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
+            color: var(--primary-blue);
+            font-size: 2.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #666;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
         }
 
         h2 {
-            color: var(--yahoo-blue);
-            border-left: 5px solid var(--yahoo-blue);
-            padding-left: 15px;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
             margin-top: 40px;
         }
 
-        .contact-box {
-            background-color: #e7f3ff;
-            padding: 20px;
-            border-radius: 8px;
+        .contact-card {
+            background-color: #f0f7ff;
+            border-radius: 10px;
+            padding: 25px;
             text-align: center;
-            margin: 20px 0;
+            margin: 25px 0;
+            border: 1px solid #d0e7ff;
         }
 
-        .email-link {
-            color: var(--yahoo-blue);
+        .email-btn {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-blue);
+            font-size: 1.3rem;
             font-weight: bold;
             text-decoration: none;
-            font-size: 1.2rem;
+            transition: opacity 0.2s;
+        }
+
+        .email-btn:hover {
+            opacity: 0.8;
+        }
+
+        .policy-list {
+            padding-left: 20px;
+        }
+
+        .policy-list li {
+            margin-bottom: 15px;
+        }
+
+        .last-update {
+            font-style: italic;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            text-align: center;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #777;
+            padding: 30px;
+            font-size: 0.85rem;
+            color: #999;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            header h1 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>EKDERSİM</h1>
-    <p>Öğretmenler İçin Akıllı Ek Ders Hesaplama Asistanı</p>
+    <h1>MAÇ SAATİ</h1>
+    <p>Spor Dünyası Cebinizde</p>
 </header>
 
 <div class="container">
     
     <section id="support">
         <h2>Destek ve İletişim</h2>
-        <p>Uygulama ile ilgili herhangi bir sorun yaşarsanız, öneride bulunmak isterseniz veya hesaplama hataları bildirmek isterseniz bize aşağıdaki e-posta adresinden ulaşabilirsiniz:</p>
-        <div class="contact-box">
-            <p>Destek E-posta:</p>
-            <a href="mailto:destek@elfcrzgr.com" class="email-link">ferhat_coker@yahoo.com</a>
+        <p>Maç Saati uygulamasını kullandığınız için teşekkürler! Uygulama ile ilgili her türlü soru, görüş, hata bildirimi ve destek talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+        
+        <div class="contact-card">
+            <p>Destek ve İletişim E-posta Adresi:</p>
+            <a href="mailto:destek@elfcrzgr.com" class="email-btn">destek@elfcrzgr.com</a>
+        </div>
+        <p>Geri bildirimleriniz bizim için değerlidir. E-postalarınıza genellikle 24 saat içinde yanıt verilmektedir.</p>
+    </section>
+
+    <section id="privacy">
+        <h2>Gizlilik Politikası (Privacy Policy)</h2>
+        <p>Maç Saati uygulaması, kullanıcılarının gizliliğine en üst düzeyde önem verir. Uygulamamızın gizlilik prensipleri şunlardır:</p>
+        <ul class="policy-list">
+            <li><strong>Veri Toplama:</strong> Uygulamamız herhangi bir kişisel veri (isim, telefon, konum, rehber vb.) toplamaz, saklamaz ve işlemez.</li>
+            <li><strong>Kullanıcı Kaydı:</strong> Uygulamayı kullanmak için herhangi bir hesap açmanız veya giriş yapmanız gerekmez.</li>
+            <li><strong>Üçüncü Taraflar:</strong> Verileriniz anonimdir ve hiçbir şekilde üçüncü taraf şahıslar veya kurumlarla paylaşılmaz.</li>
+            <li><strong>Reklam Servisleri:</strong> Uygulama içerisinde Google AdMob reklam servisleri kullanılmaktadır. Bu servisler, kişiselleştirilmemiş reklamlar sunmak amacıyla cihaz tanımlayıcılarını kullanabilir.</li>
+            <li><strong>Dış Bağlantılar:</strong> Sunulan spor verileri ve skorlar anonim kaynaklardan alınmakta ve spor bilgilendirme amaçlı sunulmaktadır.</li>
+        </ul>
+    </section>
+
+    <p class="last-update">Son güncelleme: Mayıs 2026</p>
+
+</div>
+
+<footer>
+    &copy; 2026 Maç Saati | Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
